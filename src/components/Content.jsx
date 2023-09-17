@@ -1,11 +1,14 @@
+import Part from './Part';
+
 const Content = (props) => {
+
   return (
     <div>
-      <p>Course Content: {props.contents}</p>
+      {props.parts.map((part, index) => 
+        <Part key={index} partName={part.name} exerciseCount={part.exercises}/>
+      )}
     </div>
   );
 }
 
 export default Content;
-
-
