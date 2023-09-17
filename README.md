@@ -1,1 +1,1 @@
-I created the desired components in a folder called "components" under the src folder.
+Part1 Exercise 1.2 
