@@ -3,31 +3,33 @@ import Content from "./components/Content";
 import Total from "./components/Total";
 
 
-const App = () => {
 
-  const parts = [
-    {
-      name: 'Part 1', 
-      exercises: 10
-    }, 
-    {
-      name: 'Part 2', 
-      exercises: 20
-    }, 
-    {
-      name: 'Part 3', 
-      exercises: 30
-    },
-  ];
-  return (
-    <div>
-      <Header title="Web Development Course" />
-      <Content parts={parts} />
-      <Total partCount={3} totalExercise={10+20+30} />
-    </div>
-  );
-}
 
-export default App;
-
+  const App = () => {
+    const course = 'Half Stack application development';
+    const parts = [
+      {
+        name: 'Fundamentals of React',
+        exercises: 10
+      },
+      {
+        name: 'Using props to pass data',
+        exercises: 7
+      },
+      {
+        name: 'State of a component',
+        exercises: 14
+      }
+    ];
+    
+    return (
+      <div>
+        <Header course={course} />
+        <Content parts={parts} />
+        <Total parts={parts} />
+      </div>
+    );
+  }
+  
+  export default App;
 
